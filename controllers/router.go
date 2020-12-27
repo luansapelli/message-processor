@@ -1,10 +1,8 @@
 package controllers
 
-import (
-	"github.com/gin-gonic/gin"
-)
+import "github.com/gin-gonic/gin"
 
-func Router () {
+func Router() {
 
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
@@ -14,4 +12,3 @@ func Router () {
 
 	router.Run(":80")
 }
-
