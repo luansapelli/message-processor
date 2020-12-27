@@ -9,7 +9,7 @@ type Settings struct {
 	AwsRegion    string `env:"AWS_REGION"`
 	QueueUrl     string `env:"QUEUE_URL"`
 	WorkersCount string `env:"WORKERS_COUNT"`
-	StreamName   string `env:"STREAM_NAME"`
+	StreamName   string `env:"KINESIS_STREAM_NAME"`
 }
 
 var settings Settings
