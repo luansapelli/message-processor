@@ -7,7 +7,7 @@ func Router() {
 	router := gin.Default()
 
 	api := router.Group("/golang/event-processor/")
-	api.GET("/health-check", HealthCheck)
+	api.GET("/health-check", healthCheck)
 
 	router.Run(":80")
 }
