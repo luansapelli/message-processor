@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-
-	controllers.Router()
-
+	go controllers.HealthCheck()
+	controllers.StartPool()
 }
