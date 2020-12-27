@@ -1,9 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"golang-event-processor/controllers"
+)
 
 func main() {
 
-	fmt.Println("Hello World!")
+	controllers.Router()
 
 }
