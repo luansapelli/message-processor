@@ -47,8 +47,8 @@ func worker(ctx context.Context, workerConfig *QueueSettings, waitGroup *sync.Wa
 	defer waitGroup.Done()
 
 	sqsClient := utils.CreateSqsClient()
-	eventWorker := New(sqsClient, workerConfig)
-	eventWorker.Start(ctx)
+	messageWorker := New(sqsClient, workerConfig)
+	messageWorker.Start(ctx)
 }
 
 func (worker *Worker) Start(ctx context.Context) {
