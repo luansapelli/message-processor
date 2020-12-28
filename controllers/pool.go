@@ -14,7 +14,7 @@ import (
 func StartPool() {
 	workerCount, err := strconv.Atoi(settings.GetSettings().WorkersCount)
 	if err != nil {
-		log.Printf("WorkerIndex: %d, Type: %T\n, Error: %v", workerCount, workerCount, err)
+		log.Printf("WorkerIndex: %d, Type: %T, Error: %v", workerCount, workerCount, err)
 	}
 
 	workerConfig := &QueueSettings{

@@ -6,7 +6,7 @@ import (
 )
 
 func HealthCheck() {
-	http.HandleFunc("/lno/offers-dispatcher/health-check", HealthCheckServer)
+	http.HandleFunc("/message-processor/health-check", HealthCheckServer)
 	_ = http.ListenAndServe(":80", nil)
 }
 
