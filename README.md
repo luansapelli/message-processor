@@ -1,4 +1,4 @@
-# golang-message-processor 🧙🏽‍♂️
+# message-processor 🧙🏽‍♂️
 
 This service serves to get messages from a SQS queue, send these messages to Kinesis Data Firehose.
 
