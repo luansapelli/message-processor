@@ -2,7 +2,7 @@
 
 This service serves to get messages from a SQS queue, send these messages to Kinesis Data Firehose.
 
-### Step by step
+### how-to
 
 - Start the localstack using the file `docker-compose-yaml` (make sure the Docker is running).
 - Execute the `create_env.sh` file to create an SNS topic, an SQS queue, and the subscription (check both were created and are running).
